@@ -1,0 +1,907 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/* style.css */
+/* --- CORRECTED MAIN BLOCK --- */
+#main {
+    width: 100vw;
+    min-height: 100vh;
+    /* overflow-y: hidden !important; <--- REMOVED */
+    scroll-behavior: smooth;
+}
+/* --- CORRECTED SCROLLBAR BLOCK --- */
+::-webkit-scrollbar {
+    display: none;
+    /* overflow-x: hidden; <--- REMOVED */
+    /* overflow-y: hidden; <--- REMOVED */
+}
+
+/* Nav Top Css */
+
+#nav_top {
+    width: 94.2vw;
+    height: 25vh;
+    padding: 0 4.5vw 0 4vw;
+    left: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+#nav_top>img {
+    height: 50vh;
+}
+
+#nav_top>button {
+    padding: 7px 16px;
+    font-family: dancing script;
+    font-size: 28px; 
+    font-weight: 400;/* Increased size for script readability */
+    /* Removed font-weight: 800; as it conflicts with script style */
+    line-height: 24px;
+    white-space: nowrap;
+    cursor: pointer;
+    
+    /* 💥 DESIGN CHANGES FOR VINTAGE STAMP LOOK 💥 */
+    color: #530404; /* Deep rum color for text */
+    background-color: transparent; /* Makes background see-through */
+    border: 2px solid #961c1c; /* Adds a thin border */
+    border-radius: 5px; /* Subtle rounded corners */
+    text-transform: none; /* Keeps script font natural */
+}
+
+#nav_top>i {
+    font-size: 2.5vw;
+    display: none;
+}
+/* Nav Left Css */
+
+#nav_left {
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    gap: 2vmax;
+    border-right: 2px solid rgb(43, 42, 42);
+}
+
+/* Bottle Image */
+
+#bottle {
+    position: absolute;
+    height: 95vh;
+    top: 0%;
+    left: 38%;
+    z-index: 990;
+    border-image: 0 0 2vmax black;
+}
+#bottlecopy {
+    display: none;
+}
+
+/* Page1 Css */
+
+#page1 {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#page1 h1 {
+    width: 80vw;
+    background-color: rgb(153, 13, 13);
+    font-family: 'Antom', sans-serif;
+    font-size: 20vw;
+    font-weight: 900;
+    text-align: center;
+    word-spacing: 1.5vw;
+    text-transform: uppercase;
+    line-height: 15vw;
+    background-image: url(img/texture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+#page1_dog_image {
+    height: 15vh;
+    position: absolute;
+    top: 17%;
+    left: 34.5%;
+    transform: rotate(-30deg);
+}
+
+/* Page 2 Css */
+
+
+#page2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.1vw 0 10vw;
+}
+
+#page2_part1 {
+    width: 25vw;
+    height: 79vh;
+}
+#page2_part1 h3 {
+    font-family: dancing script;
+    margin-bottom: 12px;
+}
+#page2_part1 h1 {
+    width: 25vw;
+    height: 30vh;
+    font-size: 5.5vw;
+    line-height: 10vh;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    word-spacing: -1vmax;
+    background: url(img/texture.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+}
+#page2_part1>p {
+    font-family: Gilroy;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+#page2_part1>button {
+    padding: 10px 20px;
+    font-family: "druk heavy";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    white-space: nowrap;
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#page2_part2 {
+    width: 26.5vw;
+    height: 65vh;
+    padding: 3.5vmax 3.5vmax;
+    border: 0.2vmax solid black;
+    box-shadow: 0 0 0.2vmax black;
+    font-family: Gilroy;
+}
+#page2_part2 h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+#page2_part2 h5 {
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+#box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.2vmax solid black;
+    margin-bottom: 1vh;
+}
+#page2_part2 p {
+    font-size: 10px;
+    width: 12vw;
+    color: #111;
+    line-height: 13px;
+    font-weight: 550;
+}
+
+#box h2 {
+    font-size: 25px;
+    font-family: "druk heavy";
+}
+
+
+/* page 3 css */
+
+
+#page3 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 5vmax 0 10vmax;
+}
+
+#page3 h1 {
+    width: 85vw;
+    font-size: 18.3vw;
+    line-height: 18.5vw;
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    background: url(img/texture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(177, 29, 29);
+}
+#page3_text {
+    display: flex;
+    justify-content: space-between;
+}
+#page3_text_part1 a img {
+    width: 25vw;
+    margin-top: 3vh;
+}
+#page3_text_part1 h5 {
+    width: 23vw;
+    font-size: 2vw;
+    margin-top: 3vh;
+    line-height: 4vh;
+    font-family: Gilroy;
+}
+
+#page3_text_part2 {
+    width: 30vw;
+    padding: 1vmax 2vmax;
+}
+#page3_text_part2 h5 {
+    width: 25vw;
+    font-size: 4vmax;
+     font-family: dancing script;
+    font-weight: 700;
+}
+#page3_text_part2 h2 {
+    margin-top: 2vmax;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    letter-spacing: 0.05vmax;
+
+}
+#page3_text_part2 p {
+   margin-top: 3vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+/* Page 4 css */
+
+#page4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+#page4_color_image1 {
+    width: 20vw;
+    margin: 0vh 0 0 20vh;
+}
+#page4_color_image1_text {
+    width: 13vw;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image1_text h4 {
+    width: 8vw;
+    margin-bottom: 1vh;
+    margin-left: 3vmax;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-transform: uppercase;
+}
+
+
+
+#page4_color_image2 {
+    width: 21vw;
+    margin: 26vh 0 0 -6vh;
+}
+
+#page4_color_image2_text {
+    width: 13vw;
+    position: absolute;
+    top: 32%;
+    left: 33%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image2_text h4 {
+    width: 4vw;
+    margin-left: 5vmax;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+
+#page4_color_image3 {
+    width: 25vw;
+    margin: 20vh 0 0 40vh;
+}
+#page4_color_image3_text {
+    width: 15vw;
+    position: absolute;
+    top: 30%;
+    left: 74%;
+    color: #fff;
+    text-align: center;
+}
+#page4_color_image3_text h4 {
+    width: 8vw;
+    margin-bottom: 1vh;
+    margin-left: 3.5vmax;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 0.2vmax solid #000;
+    font-weight: 100;
+    letter-spacing: 0.1vmax;
+    text-transform: uppercase;
+}
+
+#page4_color_image4 {
+    width: 30vw;
+    height: 80vh;
+    margin: 45vh 0 0 -175vh;
+    transform: rotate(-17deg);
+}
+
+
+/* Page 5 css */
+
+
+#page5 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#page5 h5 {
+    font-size: 4vmax;
+    font-family: Gilroy;
+}
+#page5 h1 {
+    width: 30vw;
+    text-transform: uppercase;
+    font-family: 'Anton',sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+    background: url(img/texture.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+}
+
+
+
+#page5_image_box {
+    width: 100vw;
+    height: 85vh;
+    padding: 0 3vw 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page5_bottel_image11, #page5_bottel_image22, #page5_bottel_image44 , #page5_bottel_image55 {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+}
+#page5_bottel_image33 {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+
+}
+
+#page5_bottel_image33 h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy;
+}
+#page5_bottel_image11 h4, #page5_bottel_image22 h4, #page5_bottel_image44 h4, #page5_bottel_image55 h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy;
+}
+
+#page5_bottel_image11 img, #page5_bottel_image22 img, #page5_bottel_image44 img, #page5_bottel_image55 img {
+    width: 15vw;
+}
+#image11 {
+    height: 47vh;
+    width: 100vw;
+    object-fit: cover;
+}
+#image22 {
+     height: 40vh;
+       width: 100vw;
+    object-fit: cover;
+    
+}
+#image33 {
+    height: 55vh;
+    opacity: 0;
+    transform: rotate(-15deg);
+    margin-top: -14vh;
+    margin-right: -15vw;
+}
+#image44 {
+    height: 50vh;
+    width: 150vw;
+    position: relative;
+    right: -50px;
+    
+}
+#image55 {
+     height: 40vh;
+       width: 100vw;
+    object-fit: cover;
+    
+}
+#page5_bottel_image11 h4, #page5_bottel_image22 h4, #page5_bottel_image44 h4, #page5_bottel_image55 h4 {
+    font-family: 'Dosis', sans-serif;
+}
+#page5_bottel_image33 h6 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Gilroy;
+    font-size: 1.1vmax;
+}
+#page5_bottel_image11 h6, #page5_bottel_image22 h6, #page5_bottel_image44 h6, #page5_bottel_image55 h6 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Gilroy;
+    font-size: 1.1vmax;
+}
+
+
+/* Page 6 */
+
+#page6 {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 0vw 0 9vw;
+    display: flex;
+    gap: 30px;
+}
+
+
+#page6 img {
+    width: 50vw;
+    height: 62vh;
+}
+
+#page5_part2 {
+    padding: 0 4vw 0 4vw;
+    width: 40vw;
+    height: 62vh;
+}
+#page6_part2 h5 {
+    font-size: 2vmax;
+    font-family: Gilroy;
+}
+
+#page6_part2 h1 {
+   margin-top: 3vh;
+   width: 30vw;
+   font-family: 'Anton', sans-serif;
+   font-size: 4vw;
+   font-weight: 100;
+   line-height: 9.5vh;
+   letter-spacing: 0.5vw;
+   text-transform: uppercase;
+}
+#page6_part2 p {
+    margin-top: 3vh;
+    /* CHANGE 1: Set a higher font-weight for boldness */
+    font-weight: 700; 
+    /* The original was 400 (regular) */
+    
+    font-family: 'Dosis', sans-serif;
+    color: #111;
+    
+    /* CHANGE 2: Set the text alignment */
+    text-align: center-left; 
+    /* Common alignment options are: left, center, right, or justify */
+
+}
+
+#page6_part2>button {
+    margin-top: 3vh;
+    font-size: 1.2vmax;
+    padding: 0.8vmax 1.5vmax;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------- MEDIA QUERIES --------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Tablet & Smaller Desktop Adjustments (Max Width 1024px) */
+@media (max-width: 1024px) {
+    /* Bottle Image (Ensure it stays visible but smaller) */
+    #bottle {
+        height: 75vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Page 2 - Main content stacking */
+    #page2 {
+        height: auto; 
+        flex-direction: column;
+        padding: 5vh 5vw;
+        gap: 5vh;
+    }
+    #page2_part1, #page2_part2 {
+        width: 80vw;
+        height: auto;
+    }
+    #page2_part1 h1 {
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    #page2_part2 {
+        padding: 3vmax;
+    }
+    #page2_part2 p {
+        width: 40vw; /* Keep text readable in two-column info box */
+    }
+
+    /* Page 3 - Text stacking */
+    #page3 {
+        height: auto;
+        padding: 10vh 5vw;
+    }
+    #page3 h1 {
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+    #page3_text {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    #page3_text_part1 a img, #page3_text_part1 h5, #page3_text_part2 {
+        width: 90vw;
+    }
+    #page3_text_part1 h5 {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    #page3_text_part2 h5 {
+        font-size: 6vw;
+    }
+}
+
+
+/* Mobile Adjustments (Max Width 600px) */
+@media (max-width: 600px) {
+    /* 1. Navigation */
+    #nav_top {
+        width: 100vw;
+        left: 0;
+        padding: 0 5vw;
+        height: 10vh;
+    }
+    #nav_top>img {
+        height: 25vh; /* Make logo smaller */
+    }
+    #nav_top>button {
+        display: none; /* Hide button on mobile to save space */
+    }
+    #nav_top>i {
+        display: initial; /* Show the menu icon */
+        font-size: 8vw;
+    }
+    #nav_left {
+        display: none; /* Hide vertical nav bar */
+    }
+
+    /* 2. Bottle Image (Floating bottle) */
+    #bottle {
+        top: 2%;
+        height: 60vh;
+        left: 55%;
+        transform: translateX(-50%); /* Center horizontally */
+    }
+    
+    /* 3. Page 1 */
+    #page1 h1 {
+        font-size: 23vw; /* Slightly smaller text for better line break */
+        line-height: 25vw;
+    }
+    #page1_dog_image {
+        height: 10vh;
+        top: 49%;
+        left: 7%; /* Move dog image to a better position */
+        transform: rotate(-30deg);
+    }
+
+    /* 4. Page 2 (Classic Dark Rum Section) */
+    #page2 {
+        height: auto; /* Allow content to dictate height */
+        padding: 5vh 5vw; /* Add vertical padding */
+        gap: 5vh;
+    }
+    #page2_part1 h1 {
+        font-size: vw;
+        line-height: 12vw;
+        height: auto;
+    }
+    #page2_part2 p {
+        width: 50vw; /* Allow text to be wider */
+    }
+    #page2_part2 h3 {
+        font-size: 18px; /* Bigger font for readability */
+    }
+    #page2_part2 h5 {
+        font-size: 15px;
+    }
+    
+    /* 5. Page 3 (Vintage Section) */
+    #page3 {
+        height: auto;
+        padding: 10vh 5vw;
+    }
+    #page3 h1 {
+        font-size: 16vw;
+        line-height: 16vw;
+    }
+    #page3_text {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    #page3_text_part1 a img {
+        width: 90vw;
+    }
+    #page3_text_part1 h5 {
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+    #page3_text_part2 h5 {
+        font-size: 8vw;
+    }
+    #page3_text_part2 h2 {
+        font-size: 4vw;
+    }
+    
+    /* 6. Page 4 (Color Splash Section) */
+    #page4 {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 5vh 0;
+    }
+    
+    /* Reset complex absolute positioning for mobile */
+    #page4_color_image1, #page4_color_image2, #page4_color_image3 {
+        width: 33vw;
+        height: auto;
+        margin: 5vh 0 0 0;
+        position: relative;
+    }
+    #page4_color_image2 {
+        width: 33vw;
+        height: auto;
+        margin: 2vh 0 60vh 0;
+        position: relative;
+        top: 20px;
+    }
+    #page4_color_image1_text {
+        width: 20vw;
+        position: absolute;
+        top: 43%;
+        left: 20%;
+        color: #ffffff;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    #page4_color_image2_text {
+        width: 20vw;
+        font-size: 50%;
+        position: absolute;
+        top: 15%;
+        left: 52%;
+        color: #ffffff;
+        transform: translateX(-50%);
+        padding: 5px;  
+    }
+    #page4_color_image3_text {
+        width: 20vw;
+        position: absolute;
+        top: 43%;
+        left: 85%;
+        color: #ffffff;
+        transform: translateX(-50%);
+        padding: 10px; 
+    }
+    #page4_color_image1_text h4, #page4_color_image2_text h4 {
+        width: auto;
+        margin-left: 0;
+        font-size: 6vw;
+        border-bottom: 0.5vw solid #ffffff;
+    }
+     #page4_color_image3_text h4 {
+        width: auto;
+        margin-left: 0;
+        font-size: 6vw;
+        border-bottom: 0.5vw solid #ffffff;
+    }
+    #page4_color_image1_text p,  #page4_color_image2_text p, #page4_color_image3_text p {
+        display: none;
+    }    
+    
+    /* Hide the overlapping rotated bottle image */
+      #page4_color_image4 {
+            display:none;             /* above background, below header */
+    }
+    
+    /* 7. Page 5 (Flavours) */
+    #page5 {
+        height: auto;
+        padding-bottom: 5vh;
+    }
+    #page5 h1 {
+        width: 90vw;
+        font-size: 10vw;
+        text-align: center;
+    }
+    #page5_image_box {
+        height: auto;
+        flex-direction: row;
+        gap: 3vh;
+    }
+#page5_bottel_image11 , #page5_bottel_image44 {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center;
+}
+
+#page5_bottel_image11 h4, #page5_bottel_image44 h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy;
+}
+#page5_bottel_image33 {
+    width: 15vw;
+    height: 60vh;
+    top: 40%;
+    justify-content: center;
+}
+
+#page5_bottel_image33 h4 {
+    display: none;
+}
+#page5_bottel_image22, #page5_bottel_image55 {
+    display: none;
+}
+
+#page5_bottel_image11 img, #page5_bottel_image44 img {
+    width: 40vw;
+}
+#image11 {
+    height: 47vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: -65px;
+}
+#image22 {
+    display: none;;
+    
+}
+#image33 {
+    height: 55vh;
+    opacity: 0;
+    transform: rotate(-15deg);
+    margin-top: -150vh;
+    margin-right: -90vw;
+}
+#image44 {
+    height: 50vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: -60px;
+    
+}
+#image55 {
+    display: none;
+    
+}
+#page5_bottel_image11 h4, #page5_bottel_image44 h4 {
+    font-family: 'Dosis', sans-serif;
+}
+#page5_bottel_image11 h6, #page5_bottel_image44 h6, #page5_bottel_image33 h6{
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Gilroy;
+    font-size: 2vw;
+}
+    
+    /* 8. Page 6 (Recipes) */
+    /* Select all #page6 elements and treat them as flex-container */
+    #page6 {
+        height: auto;
+        flex-direction: column;
+        padding: 10vh 5vw;
+    }
+    #page6 img {
+        width: 90vw;
+        height: auto;
+    }
+    /* #page6_part2 is the div containing the text */
+    #page6_part2 { 
+        width: 90vw;
+        height: auto;
+    }
+    #page6_part2 h1 {
+        width: 90vw;
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+}
