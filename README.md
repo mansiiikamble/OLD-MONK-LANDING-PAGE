@@ -1,100 +1,67 @@
-🥃 Old Monk Landing Page
+# 🥃 Old Monk Landing Page
+A modern, animation-rich landing page inspired by the legendary Old Monk Rum.
 
-A modern, animation-rich landing page inspired by the legendary Old Monk Rum. Built with HTML, CSS, JavaScript, GSAP, and Locomotive Scroll, the site blends smooth motion, detailed product sections, and rich branding visuals into a premium browsing experience.
+## 📄 Description
+A premium landing page built using HTML, CSS, JavaScript, GSAP, and Locomotive Scroll. 
+Features smooth scrolling animations, responsive layouts, detailed product sections, 
+and immersive brand storytelling. Designed to replicate a high-end beverage brand experience.
 
-Live Demo → https://old-monk-landing-page.netlify.app/
+## 🔗 Live Demo
+https://old-monk-landing-page.netlify.app/
 
-🚀 Features
-🎞 Smooth Scroll Animations
+## 🚀 Features
 
-Powered by GSAP and ScrollTrigger
+### 🎞 Smooth Scroll Animations
+- GSAP + ScrollTrigger powered
+- Fluid parallax-like interactions
+- Scroll-synced bottle animation
+- Mobile-optimized motion flow
 
-Fluid, parallax-style interactions
+### 📱 Fully Responsive
+- Works across desktop, tablet & mobile
+- Custom motion behavior under 600px
+- Optimized image handling
 
-Scroll-linked bottle animations
+### 🎨 Premium UI/UX
+- Old-Monk inspired color palette
+- Layered textures & vintage aesthetics
+- Strong typography & branding
+- Immersive storytelling layout
 
-Mobile-optimized motion experience
+### 🧭 Multi-section Experience
+- Hero bottle animation
+- “Iconic & Smooth” brand legacy
+- Vintage design history
+- Flavour showcase
+- Cocktail recipe cards
+- Locomotive smooth scrolling throughout
 
-📱 Fully Responsive
+## 🛠 Technologies Used
+| Technology | Purpose |
+|-----------|----------|
+| HTML5 | Structure of the landing page |
+| CSS3 | Styling, layout & responsiveness |
+| JavaScript (ES6) | Interactivity & behavior |
+| GSAP | Scroll animations & transitions |
+| ScrollTrigger | Scroll-based triggers |
+| Locomotive Scroll | Smooth scrolling pipeline |
+| Netlify | Deployment |
 
-Adaptive layouts for desktop, tablet & mobile
-
-Custom behavior below 600px
-
-Optimized image handling for all screens
-
-🎨 Premium UI/UX
-
-Old-Monk inspired aesthetic
-
-Layered visuals & textures
-
-Clean typography and strong branding
-
-Dark rum vintage feel
-
-🧭 Multi-section Experience
-
-Includes:
-
-Hero section with bottle animation
-
-“Iconic & Smooth” legacy section
-
-Vintage design history
-
-Old Monk flavour showcase
-
-Recipe section with imagery
-
-Smooth locomotive scrolling throughout
-
-🛠 Technologies Used
-Technology	Purpose
-HTML5	Structure of the landing page
-CSS3	Styling, layout, responsive design
-JavaScript (ES6)	Dynamic behavior & interactions
-GSAP (ScrollTrigger)	Bottle animation, transitions, motion effects
-Locomotive Scroll	Smooth scrolling & scroller proxy
-Netlify	Deployment
-📂 Folder Structure
+## 📂 Folder Structure
 root/
-│── index.html
-│── style.css
-│── script.js
-└── /img
+│── index.html  
+│── style.css  
+│── script.js  
+└── /img  
 
-🔧 Installation
-
-Clone the repository:
-
+## 🔧 Installation
 git clone https://github.com/your-username/old-monk-landing-page.git
-
-
-Open the project folder:
-
 cd old-monk-landing-page
 
-
 Open index.html in your browser
-or use Live Server if you’re in VS Code.
+or use Live Server in VS Code.
 
-🌐 Deployment
+## 🤝 Contributing
+Pull requests are welcome.
+Open an issue for major changes.
 
-The project is deployed on Netlify.
-You can deploy your version easily using:
-
-Create a Netlify account
-
-Drag & drop the project folder
-
-OR connect your GitHub repo directly
-
-🤝 Contributing
-
-Pull requests are welcome!
-For major changes, please open an issue first to discuss what you’d like to change.
-
-📜 License
-
-This project is open-source and available under the MIT License.
